@@ -33,9 +33,10 @@
                             <td><?php echo $res->id; ?></td>
                             <td><?php echo $res->name; ?></td>
                             <td><?php echo $res->mesg; ?>
-                            <br>
-                            <a href="?id=<?php echo $res->id; ?>" class = "btn btn-success" data-toggle = "modal" data-target = "#edit<?php echo $res->id; ?>"><i class = "fa fa-edit"></i>
-                            <a href="?id=<?php echo $res->id; ?>" class = "btn btn-danger" data-toggle = "modal" data-target = "#delete<?php echo $res->id; ?>"><i class = "fa fa-trash"></i></td>
+                            	<br>
+                            	<a href="?id=<?php echo $res->id; ?>" class = "btn btn-success" data-toggle = "modal" data-target = "#edit<?php echo $res->id; ?>"><i class = "fa fa-edit"></i>
+                            	<a href="?id=<?php echo $res->id; ?>" class = "btn btn-danger" data-toggle = "modal" data-target = "#delete<?php echo $res->id; ?>"><i class = "fa fa-trash"></i>
+			    </td>
                             <td>likes: <?php echo $res->lk; ?>
                                 <br>
                                 <a href="http://localhost/lab2/setlike.php?id=<?php echo $res->id; ?>" class = "btn btn-success"><i class = "fa fa-thumbs-up"></i>
