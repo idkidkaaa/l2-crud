@@ -48,15 +48,3 @@ if (isset($_POST['delete'])) {
 		header("Location: ". $_SERVER['HTTP_REFERER']);
 	}
 }
-
-
-// Set dislike
-
-if(isset($_POST['dislike'])) {
-
-	$sql = ("UPDATE lab2 SET dislikes = dislikes + 1 WHERE id = ?");
-	$query = $pdo -> prepare($sql);
-	$query-> execute([$_GET['id']]);
-		header("Location:http://localhost/lab2/index.php");
-
-}
